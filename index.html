@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML/CSS Codepad</title>
+  <meta name="description" content="Write HTML and CSS and see the output of your work in real time.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <menu class="header">
+    <h1>HTML/CSS Codepad</h1>
+    <ul id="panes-toggle-select" class="button-selectors">
+      <li data-button-pane="html" class="toggle button">HTML</li>
+      <li data-button-pane="css" class="toggle button">CSS</li>
+      <li data-button-pane="output" class="toggle button">Output</li>
+    </ul>
+  </menu>
+  <div id="panes-view" class="panes-container">
+    <form data-display-pane="html" class= "pane">
+      <textarea class="pane-text-input"></textarea>
+    </form>
+    <form data-display-pane="css" class= "pane">
+      <textarea class="pane-text-input"></textarea>
+    </form>
+    <div data-display-pane="output" class= "pane">
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
